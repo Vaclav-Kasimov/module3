@@ -49,3 +49,117 @@ body{
 .navbar-brand p span{
 	vertical-align: middle;
 }
+
+#nav-list { /*Список менюшка*/
+	margin-top: 10px;
+}
+
+#nav-list a{
+	color: #951C49;
+	text-align: center;
+}
+
+#nav-list a:hover{
+	background: #E7E7E7;
+}
+
+#nav-list a span{
+	font-size: 1.8em;
+}
+
+#phone{
+	margin-top: 5px;
+}
+
+#phone a{/*Номер телефона*/
+	text-align: right;
+	padding-bottom: 0;
+}
+
+#phone div{/*Мы доставляем*/
+	color: #557c3e;
+	text-align: right;
+	padding-right: 15px;
+}
+
+/*Кнопка меню. Нормальная граница*/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border:1px solid #61122f;
+}
+
+/*Кнопка меню. Расположение*/
+.navbar-header button.navbar-toggle{
+	clear:both;
+	margin-top: -30px;
+}
+
+/* ТОЛЬКО БОЛЬШИЕ ДЕВАЙСЫ */
+@media (min-width: 1200px){
+
+}
+
+/* ТОЛЬКО СРЕДНИЕ ДЕВАЙСЫ */
+@media (min-width: 992px) and (max-width: 1199px){
+	/*Header -- logo pic*/
+	#logo-img{
+		background: url('../images/Logo-100-100.png') no-repeat;
+		width: 100px;
+		height: 100px;
+		margin: 5px 5px 5px 0;
+	}
+
+	/*Header*/
+	.navbar-brand{
+		padding-top: 10px;
+
+	}
+
+	/*Сертифицированно вкусно*/
+	.navbar-brand p{
+		margin-top: 13px;
+	}
+}
+
+/* ТОЛЬКО МАЛЫЕ ДЕВАЙСЫ */
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+/* ТОЛЬКО СВЕРХМАЛЫЕ ДЕВАЙСЫ */
+@media (max-width: 767px){
+
+	/*Header*/
+	.navbar-brand{
+		padding-top: 10px;
+		height: 80px;
+	}
+
+	/*Restaraunt name*/
+	#brand-name{
+		padding-top: 10px;
+		font-size: 5vw;
+	}
+
+	/*Сертифицированно вкусно*/
+	.navbar-brand p{
+		text-transform: uppercase;
+		font-size: .6em;
+		margin-top: 12px;
+	}
+
+	/*Star*/
+	.navbar-brand p img{
+		height: 20px;
+	}
+
+	/*Пункты меню*/
+	#collapsible-nav a{
+		font-size: 1.2em;
+	}
+
+	/*Значки в выпадающем меню*/
+	#collapsible-nav a span{
+		font-size: 1em;
+		margin-right: 5px;
+	}
+}
